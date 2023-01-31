@@ -1,0 +1,190 @@
+1-DataProvider özelliği, TestNG’nin sağladığı önemli özelliklerden biridir. Parametreleri test yöntemlerine aktarmanın
+  ikinci yoludur.Kullanıcıların, farklı test veri setleriyle aynı test yöntemini birden çok kez çalıştırabileceğimiz veriye dayalı testler
+ (Data Driven Test) yazmasına olanak tanır.TestNG, testlerimizde DataProvider özelliğini kullanmak için @DataProvider adlı bir annotation sağlar.
+2-
+  Cross Browser Testing; web uygulamanızın farklı tarayıcılarda beklendiği gibi çalışıp çalışmadığını kontrol etmeye yönelik
+  bir tür işlevsel testtir.
+3-
+TestNG Nedir?
+  Daha basit bir araç olan JUnit'in daha yeni sürümüdür. TestNG Framework, JUnit'ten sonra gelmiştir ve
+  TestNG Framework, daha güçlü işlevsellik ve kullanım sağlar.
+  TestNG, otomasyon test paketinde kullanılan en yaygın kullanılan açık kaynak test frameworklerinden biridir.
+  TestNG yalnızca JAVA ile çalışır ve JDK 7 veya üstünü gerektirir.
+  TestNG Framework, kolay açıklama, gruplama, sıralama ve parametrelendirme, bağımlı test, paralel testler vs.
+  yardımıyla daha güçlü ve esnek test senaryoları sağlayarak eski frameworkün sınırlamalarını ortadan kaldırır
+
+4-
+  TestNG'nin JUnit’e Göre Avantajları Nelerdir?
+  ✓ Uygulama için HTML raporları üretir.
+  ✓ TestNG'de, JUnit'te bulunan @beforeclass ve @afterclass gibi bir kısıtlama yoktur.
+  ✓ TestNG, JUnit'te mümkün olmayan test senaryolarını kolayca gruplamanızı sağlar.
+  ✓ TestNG, @Before/After suite, @Before/AfterTest ve Before/AfterGroup gibi üç ek düzeyi destekler.
+  ✓ TestNG herhangi bir sınıfı genişletmez. TestNG Framework, her bir test senaryosunun diğer test
+  senaryolarından bağımsız olduğu test senaryolarını tanımlamanıza olanak tanır.
+  ✓ Belirli bir grubun test senaryolarını çalıştırmanıza izin verir. 'Smoke' and 'Regression’ iki grup testlerin
+  olduğunu düşünülürse; yalnızca ‘Regression’ çalıştırılmak istenirse bu sadece TestNG Framework’de
+  mümkündür.
+  ✓ Test senaryolarının paralel yürütülmesi, yani birden fazla test senaryosunun çalıştırılması yalnızca TestNG
+  Framework’de mümkündür, yine Cross Browser Test’e imkan tanır.
+
+5-
+  TestNG Annotations
+  @BeforeSuite @AfterSuite  Bu paketteki tüm testlerden önce/sonra çalışır.
+
+  @BeforeTest @AfterTest Tüm test methodlarından önce/sonra çalışır.
+
+  @BeforeClass @AfterClass Herhangi belirli test grubundan önce/sonra çalışır.
+
+  @BeforeGroups @AfterGroups  Bir test sınıfındaki tüm test  yöntemlerinden önce/sonra  çalışır.
+
+  @BeforeMethod @AfterMethod  Her test methodundan  önce/sonra çalışır.
+
+6-
+TestNG Annotations
+
+  priority
+  - Test annotationlara öncelik verilmesine
+  yardımcı olurken, varsayılan öncelik 0 ile başlar
+  ve testler artan sırada yürütülür.
+
+  dependsOn
+  - İkinci test methodu birinci test methoduna bağımlı olmak
+  istediğinde bu attribute kullanılır.
+
+  enabled
+  - Belirli test yöntemini mevcut suitte/class’ta çalıştırmak
+  isteyip istemediğimizi belirlememize yardımcı olur.
+
+  timeOut
+  - Test için bir timeOut - zaman aşımı değeri belirlemeye
+  yardımcı olur (genellikle milisaniye olarak kullanılır).
+  Test belirtilen zaman aşımı değerinden daha fazlasını alırsa,
+  test başarısız olarak işaretlenir.
+
+  description
+  - Testle ilgili bilgileri açıklayan @Test annotationa eklenen ve
+  genelde tek bir dizeden oluşan açıklamadır.
+
+  groups
+  - Aynı işlevselliğe ait farklı test senaryolarını gruplamak için
+  kullanılır.
+
+7-
+ TestNG Assertions,Assertionlar otomasyon kullanmamızın ana  nedenlerinden biridir. TestNG de expected result ile actual result’ın eşleşip eşleşmediği doğrulanır.
+
+    Hard Assertions in TestNG
+    JUnit Framework de öğrendiğimiz şeklidir.
+    Bir assert ifadesi başarısız olduğunda test execution’ı durduran assertionlardır ve bu nedenle sonraki assert ifadeleri
+    doğrulanmaz.
+
+   Soft Assertions in TestNG
+   Hard assertion’ın tam tersidir. Bir assertion failed olursa test execution durmaz, sonraki adımlar çalışmaya devam
+   eder, o anda AssertionError görülmez.
+   Sonrasında konsolda görünür.
+
+ 8-
+ XML (Extensible Markup Language), hem insanlar hem de bilgisayar sistemleri tarafından kolayca okunabilen belgeler
+ oluşturmak için kullanılan bir işaretleme dilidir. W3C tarafından tanımlanan bir standarttır.
+ XML, internet üzerinden veri alışverişi yapan platformlar ve sistemler arasındaki veri alışverişini standart hale getirmek
+ için geliştirilmiş bir biçimlendirme dilidir.
+ TestNG.xml dosyasının başlıca avantajları şunlardır:
+ • Test yöntemlerinin paralel yürütülmesini sağlar.
+ • Bir test yönteminin başka bir test yöntemine bağımlılığına izin verir.
+ • Test yöntemlerimize öncelik vermemize yardımcı olur.
+ • Test yöntemlerinin test grupları halinde gruplandırılmasını sağlar.
+ • @Parameters annotation kullanarak test senaryolarının parametreleştirilmesini destekler.
+ • @DataProvider annotation kullanarak veriye dayalı testlerde yardımcı olur.
+ • Beklenen sonuçların gerçek sonuçlarla doğrulanmasına yardımcı olan farklı türde iddialara sahiptir.
+ • Test özetimizi daha iyi ve net bir şekilde anlamak için farklı HTML raporları, kapsam raporları vb. vardır.
+
+ 9_
+ Web Tables, verilerin satırlar ve
+ sütunlar kullanılarak yapılandırılmış
+ bir biçimde sunulduğu normal
+ tablolar gibidir. Tek fark, web
+ üzerinde HTML kodu yardımıyla
+ görüntülenmeleridir.
+ <table> , bir web tablosunu
+ tanımlamak için kullanılan HTML
+ etiketidir. Tablonun başlığını
+ tanımlamak için <th> kullanılırken ,
+ web tablosu için sırasıyla satırları
+ ve sütunları tanımlamak
+ için <tr> ve <td> etiketleri
+ kullanılır.
+
+ 10_
+
+ • Log4j, 1996'nın başlarında geliştirilen Java ile yazılmış hızlı, esnek ve güvenilir bir günlük kaydı çerçevesidir.
+ • Genel bir ifade ile loglama, bir uygulamanın RunTime’daki durumunu sistematik, kontrol edilebilir,
+ okunabilir şekilde saklama yöntemidir.
+ • Log4j ile Selenium Otomasyonumuzun akış detaylarını bir dosyada veya veri tabanlarında saklamak
+ mümkündür.
+ • Log4j hem büyük hem de küçük projeler için kullanılır.
+
+ Loglama Dezavantajlar
+ • Sistematik bir yapı kurmak
+ • Ekstra kod yazmak
+ • Kontrol etmek
+ • Bakım
+ Loglama Avantajlar
+ • Hızlı hata ayıklama
+ • Geçmiş
+ • Kontrol edilebilirlik
+
+ 11_
+ Loggers: Bilgilerin loglanmasından sorumludur. Logger Class, Log4j'yi kullanmak için halihazırda uygulanmış
+ tüm genel yöntemlere sahip Java tabanlı bir yardımcı programdır.
+ Define the Log4j Level
+ All – Günlük kaydı düzeyip her şeyi günlüğe kaydeder. (Tüm günlükleri açar)
+ DEBUG – Hata ayıklama bilgilerini yazdırır ve geliştirme aşamasında yardımcı olur.
+ INFO – Uygulamanın ilerleyişini vurgulayan bilgi mesajı yazdırır.
+ WARN – Hatalı ve beklenmeyen sistem davranışıyla ilgili bilgileri yazdırır.
+ ERROR – Sistemin devam etmesine izin verebilecek bir hata mesajı yazdırır.
+ FATAL – Uygulamanın çökmesine neden olan sistemin kritik bilgilerini yazdırır.
+ OFF – Kayıt yok.
+
+ 12-
+ Appenders: Log Event'leri hedeflerine ulaştırmak için kullanılır. Günlük bilgileriyle ne olacağına karar verir.
+ Basit bir deyişle, günlükleri dosyaya yazmak için kullanılır.
+ Birkaç tür appender(ekleyici);
+
+ 1) Console Appender logs to standard output
+ 2) File Appender prints logs to some file
+ 3) Rolling File Appender to a file with maximum size
+ NOT: Log4j özelliklerinde herhangi bir adla appender çağırabilir, ayrıca başka tür appenderlar’da mevcuttur.
+13_
+ Layouts: Günlük bilgilerinin farklı stillerde biçimlendirilmesinden sorumludur.
+ Logger Class, günlüğe kaydetme etkinliklerini işlemek için farklı yöntemler sağlar. Bir logger nesnesi elde
+ etmek için iki statik yöntem sağlar
+
+14-
+Selenium Exceptions
+Exception Name Description
+NoSuchElementException Locatorlar web sayfası veya uygulamadaki öğeleri bulamadığında veya
+bunlara erişemediğinde gerçekleşir.
+NoSuchFrameException Değiştirilecek iframe hedefi yoksa oluşur.
+ElementNotVisibleException DOM’daki mevcut bir öğenin gizli olarak ayarlanmış bir özelliği olduğunda
+ortaya çıkar.
+NoAlertPresentException Sunulan alert yok durumuna geçtiğinizde oluşur.
+StaleElementReferenceException Web öğesi geçerli DOM' den ayrıldığında ortaya çıkar.
+TimeoutException Bir komutun tamamlanması için yeterli zaman olmadığında atılır. Örneğin,
+aranan eleman belirtilen sürede bulunamadı.
+WebDriverException Tarayıcıyı kapattıktan hemen sonra Web Sürücüsü harekete geçtiğinde
+gerçekleşir.
+
+15_
+Extent Reports
+Raporlamanın amacı, iyi bir test raporunun projeniz için bir sağlık sertifikası görevi görmesidir.
+Dependency pom.xml’e eklenir.En iyi raporlar  oluşturmanın en iyi yolu <Extent Report> library kullanmaktır.
+
+
+
+
+
+
+
+
+
+
+

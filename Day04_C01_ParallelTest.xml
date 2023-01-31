@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Paralel Test Suite" >
+
+    <test name="Paralel Test" parallel="methods">
+
+        <classes>
+
+            <class name="clarusway.testies.Day04_C01_ParallelTest"></class>
+
+        </classes>
+
+    </test>
+
+</suite>
+
+
+
+

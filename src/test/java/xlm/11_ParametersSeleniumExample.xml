@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Browser Parameters Suite">
+
+    <test name="Browswer Parametres Test01">
+
+        <parameter name="browser" value="chrome"></parameter>
+
+        <parameter name="aranacakKelime" value="glode"></parameter>
+
+        <classes>
+
+            <class name="clarusway.testies.exercies.Day_2.day2_04"></class>
+
+        </classes>
+
+
+
+
+
+
+
+    </test>
+
+
+
+</suite>
+
+
+

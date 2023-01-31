@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Paralel Test Suite" parallel="classes">
+
+    <test name="Paralel Test 01">
+
+        <classes>
+
+            <class name="clarusway.testies.Day01_C09_AssertionTypes"></class>
+            <class name="clarusway.testies.Day01_C03_DependsOn"></class>
+            <class name="clarusway.testies.Day04_C03_ParallelTestDataProvider"></class>
+
+        </classes>
+
+    </test>
+
+    <test name="Paralel Test02">
+
+        <classes>
+
+
+            <class name="clarusway.testies.Day01_C09_AssertionTypes"></class>
+            <class name="clarusway.testies.Day01_C03_DependsOn"></class>
+            <class name="clarusway.testies.Day04_C03_ParallelTestDataProvider"></class>
+
+
+        </classes>
+
+    </test>
+
+
+    <test name="Paralel Test03">
+
+        <classes>
+
+
+            <class name="clarusway.testies.Day01_C09_AssertionTypes"></class>
+            <class name="clarusway.testies.Day01_C03_DependsOn"></class>
+            <class name="clarusway.testies.Day04_C03_ParallelTestDataProvider"></class>
+
+
+        </classes>
+
+    </test>
+
+
+
+
+</suite>
